@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(213, 218, 219);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(213, 218, 219);
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.words{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(180, 180, 180);;
+    width: 90%;
+    height: 100px;
+    /* border: 3px solid black; */
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 12px #ffffff73, 5px 5px 10px rgba(94, 104, 121, .288);
+}
+
+
+.first_letters{
+     
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 16.9px; */
+    height: 50px;
+    background-color: rgb(180, 180, 180);
+    color: black;
+    border-radius: 5px;
+     
+}
+
+.forspan{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 27px;
+    height: 50px;
+    font-size: 30px;
+    
+}
+
+ 
+
+.anim{
+    border-bottom: 3px solid black;
+    animation: meganie .8s ease-in-out infinite;
+}
+
+.second_letters{
+     
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 50px; 
+    background-color: rgb(180, 180, 180);
+    color: black;
+    border-radius: 5px;
+    /* margin: 0 16.9px; */
+}
+
+ 
+
+.keyboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 330px;
+    margin: 0 auto;
+    margin-top: 230px;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 177, 177);
+    background-color: rgb(180, 180, 180);
+    box-shadow: -15px -15px 22px #ffffff73  , 15px 15px 20px rgba(94, 104, 121, .288);
+    position: relative;
+}
+
+
+
+.inner_keyboard{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+     
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    color:black;
+    border-radius: 5px;
+    margin: 0 3px;
+    font-size: 27px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+ .backspace{
+    width: 180px;
+    height: 50px;
+     
+}
+
+.backtic{
+    width: 76px;
+}
+
+.letters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.tab{
+    width: 139px;
+    height: 50px;
+     
+}
+
+.slash{
+    width: 119px;
+    height: 50px;
+     
+}
+
+.capslock {
+    width: 165px;
+    height: 50px;
+     
+}
+
+.enter{
+    width: 159px;
+    height: 50px;
+     
+}
+
+.shift{
+    width: 201px;
+    height: 50px;
+     
+}
+
+.every{
+    width: 105px;
+    height: 50px;
+    
+}
+
+.space{
+    width: 400px;
+    height: 50px;
+     
+}
+
+.textDecor {
+    border: 2px solid black;
+    box-shadow: -3px -3px 7px #5f61c2e0, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+/* colors */
+
+.blue{
+    background-color: rgba(108, 136, 235, 0.835);
+}
+
+.gren{
+    background-color: rgba(63, 172, 72, 0.835); 
+}
+
+.orange{
+    background-color: rgba(236, 161, 74, 0.787);  
+}
+
+.braun{
+    background-color: rgba(218, 76, 50, 0.787); 
+}
+
+.violet{
+    background-color: rgba(211, 60, 216, 0.787); 
+}
+
+.yellow{
+    background-color: rgba(170, 162, 46, 0.787); 
+}
+
+.aqua{
+    background-color: rgb(91, 202, 202);
+}
+
+.red{
+    background-color: rgb(231, 73, 86);
+}
+
+.strange{
+    background-color: rgb(155, 146, 153);
+}
+
+.red_black{
+    color: yellow;
+    background-color: black;
+}
+
+
+@keyframes meganie {
+    0%{
+       border-bottom-color: black;
+         
+    }
+    
+    100%{
+        border-bottom-color: white;
+         
+    }
+
+}
+/* mistake container */
+
+.mistake_container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.wrap_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+    width: 90%; 
+}
+
+ 
